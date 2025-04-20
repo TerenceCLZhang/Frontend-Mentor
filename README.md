@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-This repository contains my solutions to various Frontend Mentor challenges. Each project focuses on improving my frontend development skills using HTML, CSS, JavaScript,
+This repository contains my solutions to various Frontend Mentor challenges. Each project focuses on improving my frontend development skills using HTML, CSS, and JavaScript.
 
 | Challenge | Live Demo |
 | --------- | --------- |
