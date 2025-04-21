@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ==========================
+CSS Reset by Josh Comeau
+============================= */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ==========================
+Main Styles
+============================= */
+
+body {
+  --green: hsl(75, 94%, 57%);
+
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-xbold: 700;
+
+  --border-radius: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: var(--grey-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background-color: var(--grey-800);
+  border-radius: var(--border-radius);
+  width: 375px;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+}
+
+h1 {
+  font-weight: var(--fw-xbold);
+  font-size: 1.5remrem;
+}
+
+.location {
+  color: var(--green);
+  font-weight: var(--fw-bold);
+}
+
+.links {
+  gap: 1rem;
+  width: 100%;
+}
+
+.links a {
+  background-color: var(--grey-700);
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.links a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+  transition: 0.25s ease;
+}
