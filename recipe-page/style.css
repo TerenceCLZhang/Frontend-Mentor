@@ -170,6 +170,8 @@ ul,
 ol {
   list-style: none;
   position: relative;
+  display: flex;
+  gap: 0.5rem;
 }
 
 ul li {
@@ -250,7 +252,7 @@ main div:last-of-type {
 @media only screen and (min-width: 700px) {
   main {
     width: 700px;
-    margin: 8rem;
+    margin: 5rem;
     border-radius: var(--border-radius);
     overflow: hidden;
     padding: 2rem;
