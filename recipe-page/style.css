@@ -250,7 +250,7 @@ main div:last-of-type {
 @media only screen and (min-width: 700px) {
   main {
     width: 700px;
-    margin: 5rem;
+    margin: 8rem;
     border-radius: var(--border-radius);
     overflow: hidden;
     padding: 2rem;
