@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ==========================
+CSS Reset by Josh Comeau
+============================= */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+/* p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+} */
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ==========================
+Main Styles
+============================= */
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+
+  --fw-light: 200;
+  --fw-bold: 600;
+
+  --border-radius: 10px;
+}
+
+body,
+header,
+main,
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  padding: 2rem;
+  color: var(--grey-500);
+  gap: 3rem;
+}
+
+header {
+  gap: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--grey-400);
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+main,
+.center-container {
+  gap: 1.5rem;
+}
+
+.left-container,
+.center-container > div,
+.right-container {
+  border-radius: var(--border-radius);
+  padding-top: 10px;
+  box-shadow: rgba(175, 226, 241, 0.329) 0px 4px 12px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 325px;
+}
+
+.content-container {
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  padding-bottom: 3.5rem;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content-container > div {
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.content-container.cyan {
+  border-top: 10px solid var(--cyan);
+}
+
+.content-container.red {
+  border-top: 10px solid var(--red);
+}
+
+.content-container.orange {
+  border-top: 10px solid var(--orange);
+}
+
+.content-container.blue {
+  border-top: 10px solid var(--blue);
+}
+
+.icon {
+  align-self: flex-end;
+  width: 30%;
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    max-width: 500px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .left-container,
+  .center-container > div,
+  .right-container {
+    aspect-ratio: auto;
+    height: 300px;
+    max-width: 375px;
+  }
+
+  .icon {
+    width: auto;
+    max-width: 100%;
+  }
+}
