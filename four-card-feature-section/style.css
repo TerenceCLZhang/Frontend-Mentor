@@ -115,7 +115,7 @@ body {
   min-height: 100vh;
   padding: 2rem;
   color: var(--grey-500);
-  background-color: rgba(238, 238, 238, 0.925);
+  background-color: rgba(245, 245, 245, 0.925);
   gap: 3rem;
 }
 
