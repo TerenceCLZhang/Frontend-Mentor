@@ -115,7 +115,7 @@ body {
   min-height: 100vh;
   padding: 2rem;
   color: var(--grey-500);
-  background-color: rgba(245, 245, 245, 0.925);
+  background-color: white;
   gap: 3rem;
 }
 
@@ -152,7 +152,8 @@ main,
 .right-container {
   border-radius: var(--border-radius);
   padding-top: 10px;
-  box-shadow: rgba(175, 226, 241, 0.329) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   width: 100%;
   aspect-ratio: 1 / 1;
   max-width: 325px;
