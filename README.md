@@ -10,4 +10,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Recipe Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/recipe-page)                                       | [Live Demo](https://terenceclzhang-recipe-page.netlify.app/)               |
 | [Product Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/product-preview-card-component) | [Live Demo](https://terenceclzhang-product-preview-card.netlify.app/)      |
 | [Four Card Feature Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/four-card-feature-section)           | [Live Demo](https://terenceclzhang-four-card-feature-sec.netlify.app/)     |
-| [Four Card Feature Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/testimonials-grid-section)           | [Live Demo](https://terenceclzhang-testimonials-grid-section.netlify.app/) |
+| [Four Card Feature Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/testimonials-grid-section)           | [Live Demo](https://terenceclzhang-testimonials-grid-sec.netlify.app/) |
