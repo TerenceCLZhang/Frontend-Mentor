@@ -1,0 +1,104 @@
+main {
+  background-image: linear-gradient(hsl(218, 23%, 16%), hsl(207, 16%, 13%));
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  height: 391px;
+}
+
+.star {
+  background-image: url(images/icon-star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(215, 10%, 23%);
+  padding: 1rem;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rating-option {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: var(--grey-900);
+  overflow: hidden;
+  position: relative;
+}
+
+.rating-option > input[type="radio"] {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.rating-option > input[type="radio"]:focus {
+  outline: transparent;
+}
+
+.rating-option:hover {
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+  cursor: pointer;
+}
+
+.rating-option > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-weight: var(--bold);
+}
+
+.rating {
+  background-color: hsl(208, 15%, 23%);
+  color: var(--orange-500);
+  padding: 0.25rem 1rem;
+  padding-top: 0.5rem;
+  border-radius: 15px;
+}
+
+.rating-submit {
+  border: transparent;
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 50px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 3px;
+}
+
+.rating-submit:hover,
+.rating-option:has(input:checked) {
+  background-color: white;
+  color: var(--grey-950);
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    max-width: 390px;
+    height: 399px;
+  }
+}
