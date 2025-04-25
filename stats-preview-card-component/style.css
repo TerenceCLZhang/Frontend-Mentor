@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+/* ==========================
+CSS Reset by Josh Comeau
+============================= */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ==========================
+Main Styles
+============================= */
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%); /* main background */
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /* card background */
+  --soft-violet: hsl(277, 64%, 61%); /* accent */
+
+  --white: hsl(0, 0%, 100%); /* main heading, stats */
+  --white-transparent-75: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+  --white-transparent-60: hsla(0, 0%, 100%, 0.6); /* stat headings */
+
+  --ff-headings: "Inter", sans-serif;
+  --ff-paragraphs: "Lexend Deca", sans-serif;
+
+  --fw-bold: 700;
+}
+
+body,
+main,
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: var(--ff-paragraphs);
+  font-size: 15px;
+  color: var(--white-transparent-75);
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+main {
+  background-color: var(--dark-desaturated-blue);
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h1,
+.stat {
+  color: var(--white);
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+}
+
+.header-img {
+  background-image: url(images/image-header-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 225px;
+  width: 100%;
+}
+
+.header-img::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 100%, 28%, 0.65);
+}
+
+.main-contents {
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.main-text,
+.stats-container {
+  gap: 1rem;
+}
+
+.accent {
+  color: var(--soft-violet);
+}
+
+.stats-container {
+  gap: 1.25rem;
+}
+
+.stat {
+  font-size: 1.5rem;
+}
+
+.stat-heading {
+  text-transform: uppercase;
+  color: var(--white-transparent-60);
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    flex-direction: row;
+    height: 465px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .header-img {
+    order: 2;
+    height: 100%;
+    width: 50%;
+    background-position: right;
+  }
+
+  .main-contents {
+    order: 1;
+    text-align: left;
+    padding: 5rem;
+    margin-right: 3rem;
+    align-items: start;
+    gap: 4rem;
+    flex: 1;
+    width: 50%;
+  }
+
+  .main-text {
+    gap: 2rem;
+  }
+
+  .stats-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .stat {
+    text-align: left;
+    width: 100%;
+  }
+}
