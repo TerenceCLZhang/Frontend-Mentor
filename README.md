@@ -11,4 +11,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Product Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/product-preview-card-component) | [Live Demo](https://terenceclzhang-product-preview-card.netlify.app/)    |
 | [Four Card Feature Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/four-card-feature-section)           | [Live Demo](https://terenceclzhang-four-card-feature-sec.netlify.app/)   |
 | [Testimonials Grid Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/testimonials-grid-section)           | [Live Demo](https://terenceclzhang-testimonials-grid-sec.netlify.app/)   |
-| [Interactive Rating Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/interactive-rating-component)     | [Live Demo](https://terenceclzhang-interactive-rating-comp.netlify.app/) |
+| [Interactive Rating Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/interactive-rating-component)     | [Live Demo](https://terenceclzhang-interactive-rating-com.netlify.app/) |

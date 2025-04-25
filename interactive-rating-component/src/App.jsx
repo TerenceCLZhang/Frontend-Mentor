@@ -1,4 +1,5 @@
 import { useState } from "react";
+import thankYouImage from "./images/illustration-thank-you.svg";
 import "./App.css";
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
       ) : (
         <>
           <div className="thank-you-img">
-            <img src="src/images/illustration-thank-you.svg" alt="" />
+            <img src={thankYouImage} alt="thank you image" />
           </div>
           <span className="rating">You selected {rating} out of 5</span>
           <h2>Thank you!</h2>
