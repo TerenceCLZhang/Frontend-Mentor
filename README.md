@@ -13,4 +13,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Testimonials Grid Section](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/testimonials-grid-section)           | [Live Demo](https://terenceclzhang-testimonials-grid-sec.netlify.app/)       |
 | [Interactive Rating Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/interactive-rating-component)     | [Live Demo](https://terenceclzhang-interactive-rating-com.netlify.app/)      |
 | [Stats Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/stats-preview-card-component)     | [Live Demo](https://terenceclzhang-stats-preview-card-com.netlify.app/)      |
-| [Single Price Grid Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/single-price-grid-component)       | [Live Demo](https://terenceclzhang-single-price-grid-component.netlify.app/) |
+| [Single Price Grid Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/single-price-grid-component)       | [Live Demo](https://terenceclzhang-single-price-grid-com.netlify.app/) |
