@@ -1,0 +1,41 @@
+.input-container {
+  gap: 0.25rem;
+  position: relative;
+}
+
+.input-container > div {
+  position: relative;
+}
+
+.input-container input {
+  border: none;
+  border: 1px solid var(--neutral-grayish-blue);
+  color: var(--neutral-dark-blue);
+  position: relative;
+  font-weight: var(--fw-bold);
+}
+
+.input-container input:focus {
+  outline-color: black;
+}
+
+.error-message {
+  color: var(--primary-red);
+  font-weight: var(--fw-500);
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.error {
+  border: 2px solid var(--primary-red) !important;
+  padding-right: 40px !important;
+}
+
+.error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}

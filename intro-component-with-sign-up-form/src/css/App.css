@@ -1,0 +1,16 @@
+main {
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    flex-direction: row;
+    width: 85%;
+    gap: 5rem;
+  }
+
+  main > * {
+    flex: 1;
+    padding: 0;
+  }
+}

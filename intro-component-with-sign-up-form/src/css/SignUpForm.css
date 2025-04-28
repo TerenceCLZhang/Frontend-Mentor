@@ -1,0 +1,43 @@
+.sign-up-form {
+  width: 100%;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+form * {
+  width: 100%;
+}
+
+form input {
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: var(--primary-green);
+  color: white;
+  text-transform: uppercase;
+  border: transparent;
+  font-weight: var(--fw-500);
+  cursor: pointer;
+  padding: 1;
+  box-shadow: 0px 5px 0px hsla(157, 48%, 26%, 0.65);
+}
+
+form input[type="submit"]:hover {
+  opacity: 0.75;
+  transition: 0.25s ease;
+}
+
+form input[type="submit"]:active {
+  transform: scale(95%);
+}
