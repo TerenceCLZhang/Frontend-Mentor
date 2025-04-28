@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="nft-img">
+        <!-- Assuming it opens a modal of the NFT within the current page; otherwise if it opens a new page, use <a> -->
+        <button aria-label="View details of Equilibrium #3429 NFT" role="link">
+          <img src="images/image-equilibrium.jpg" alt="Equilibrium #3429 NFT" />
+        </button>
+      </div>
+
+      <section class="upper-sec">
+        <h1><a href="#">Equilibrium #3429</a></h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="nft-info">
+          <div>
+            <img src="images/icon-ethereum.svg" alt="" />
+            <span class="cost">0.041 ETH</span>
+          </div>
+          <div>
+            <img src="images/icon-clock.svg" alt="" />
+            <span>3 days left</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="lower-sec">
+        <div class="profile-pic">
+          <img src="images/image-avatar.png" alt="Avatar of Jules Wyvern" />
+        </div>
+        <p>Creation of <a href="#">Jules Wyvern</a></p>
+      </section>
+    </main>
+  </body>
+</html>

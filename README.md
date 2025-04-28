@@ -16,3 +16,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Single Price Grid Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/single-price-grid-component)             | [Live Demo](https://terenceclzhang-single-price-grid-com.netlify.app/)  |
 | [Intro Component with Sign-Up Form](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/intro-component-with-sign-up-form) | [Live Demo](https://terenceclzhang-intro-component-signup.netlify.app/) |
 | [Order Summary Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/order-summary-component)                     | [Live Demo](https://terenceclzhang-order-summary-com.netlify.app/)      |
+| [NFT Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/nft-preview-card-component)               | [Live Demo](https://terenceclzhang-nft-preview-card-com.netlify.app/)   |
