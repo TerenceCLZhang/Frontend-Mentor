@@ -17,4 +17,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Intro Component with Sign-Up Form](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/intro-component-with-sign-up-form) | [Live Demo](https://terenceclzhang-intro-component-signup.netlify.app/) |
 | [Order Summary Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/order-summary-component)                     | [Live Demo](https://terenceclzhang-order-summary-com.netlify.app/)      |
 | [NFT Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/nft-preview-card-component)               | [Live Demo](https://terenceclzhang-nft-preview-card-com.netlify.app/)   |
-| [3 Column Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/3-column-preview-card-component)     | [Live Demo](https://terenceclzhang-3-column-preview-card.netlify.app/)       |
+| [3 Column Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/3-column-preview-card-component)     | [Live Demo](https://terenceclzhang-3-column-preview-card.netlify.app/)  |
