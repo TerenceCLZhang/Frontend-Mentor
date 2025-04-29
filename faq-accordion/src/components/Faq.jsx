@@ -12,13 +12,16 @@ function Faq({ id, question, answer }) {
         <h2>{question}</h2>
         <button
           onClick={() => setAnswerRevealed(!answerRevealed)}
-          className="reveal-btn"
-          style={{
-            backgroundImage: `url(${answerRevealed ? iconMinus : iconPlus})`,
-          }}
+          className="reveal-btn flex"
           aria-expanded={answerRevealed}
           aria-controls={`answer-${id}`}
-        ></button>
+          aria-label={!answerRevealed ? "Expand answer" : "Collapse answer"}
+        >
+          <img
+            src={!answerRevealed ? iconPlus : iconMinus}
+            alt={!answerRevealed ? "Expand" : "Collapse"}
+          />
+        </button>
       </div>
       {answerRevealed && (
         <p id={`answer-${id}`} className="answer">

@@ -14,13 +14,18 @@
 .reveal-btn {
   height: 30px;
   width: 30px;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
   border: transparent;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.reveal-btn > img {
+  width: 30px;
+  height: 30px;
 }
 
 .answer {
