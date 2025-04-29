@@ -2,7 +2,7 @@ main {
   background-image: linear-gradient(hsl(218, 23%, 16%), hsl(207, 16%, 13%));
   padding: 2rem 1.5rem;
   border-radius: 15px;
-  gap: 1.5rem;
+  gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   height: 391px;
@@ -12,9 +12,9 @@ main {
   background-image: url(images/icon-star.svg);
   background-position: center;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
   background-color: hsl(215, 10%, 23%);
+  height: 40px;
+  width: 40px;
   padding: 1rem;
   border-radius: 50%;
   align-self: flex-start;
@@ -65,7 +65,7 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
   font-weight: var(--bold);
 }
 

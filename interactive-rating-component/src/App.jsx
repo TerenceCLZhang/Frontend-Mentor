@@ -23,7 +23,8 @@ function App() {
     <main>
       {!submitted ? (
         <>
-          <div className="star"></div>
+          <span className="star"></span>
+
           <h1>How did we do?</h1>
           <p>
             Please let us know how we did with your support request. All
