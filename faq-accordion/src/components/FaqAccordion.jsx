@@ -1,12 +1,13 @@
 import Faq from "./Faq";
 import "../css/FaqAccordion.css";
 import data from "../data/data.json";
+import star from "../assets/images/icon-star.svg";
 
 function FaqAccordion() {
   return (
     <section className="faq-accordion flex">
       <div className=" title flex">
-        <img src="src/assets/images/icon-star.svg" alt="" />
+        <img src={star} alt="" />
         <h1>FAQs</h1>
       </div>
       <div className="faqs flex">
