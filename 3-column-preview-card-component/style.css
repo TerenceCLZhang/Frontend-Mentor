@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+/* ==========================
+CSS Reset by Josh Comeau
+============================= */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ==========================
+Main Styles
+============================= */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  --fw-paragraph: "Lexend Deca", sans-serif;
+  --fw-heading: "Big Shoulders", sans-serif;
+
+  --fw-bold: 700;
+}
+
+body,
+main,
+section,
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-size: 15px;
+  min-height: 100vh;
+  font-family: var(--fw-paragraph);
+  padding: 2rem;
+}
+
+h2 {
+  font-family: var(--fw-heading);
+  font-weight: var(--fw-bold);
+  font-size: 2.5rem;
+  color: var(--very-light-gray);
+}
+
+main {
+  color: var(--transparent-white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section {
+  padding: 2.5rem;
+}
+
+section,
+section > div {
+  gap: 1.25rem;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-orange {
+  background-color: var(--bright-orange);
+}
+
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.bg-very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+
+.orange-text {
+  color: var(--bright-orange);
+}
+
+.dark-cyan-text {
+  color: var(--dark-cyan);
+}
+
+.very-dark-cyan-text {
+  color: var(--very-dark-cyan);
+}
+
+.learn-more-btn {
+  border: 2px solid var(--very-light-gray);
+  background: var(--very-light-gray);
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+}
+
+.learn-more-btn:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: var(--very-light-gray);
+}
+
+@media only screen and (min-width: 850px) {
+  main {
+    flex-direction: row;
+    width: clamp(0px, 90vw, 900px);
+    height: clamp(0px, 85vh, 475px);
+  }
+
+  section {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  section > div {
+    justify-content: start;
+  }
+}
