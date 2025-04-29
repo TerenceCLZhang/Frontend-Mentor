@@ -1,0 +1,28 @@
+.faq {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.question {
+  justify-content: space-between;
+  align-items: center;
+  color: var(--purple-950);
+  font-weight: var(--fw-bold);
+  gap: 2rem;
+}
+
+.reveal-btn {
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
+.answer {
+  color: var(--purple-600);
+}
