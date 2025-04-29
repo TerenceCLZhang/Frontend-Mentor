@@ -1,4 +1,6 @@
 import { useState } from "react";
+import iconPlus from "../assets/images/icon-plus.svg";
+import iconMinus from "../assets/images/icon-minus.svg";
 import "../css/Faq.css";
 
 function Faq({ id, question, answer }) {
@@ -12,11 +14,7 @@ function Faq({ id, question, answer }) {
           onClick={() => setAnswerRevealed(!answerRevealed)}
           className="reveal-btn"
           style={{
-            backgroundImage: `url(${
-              !answerRevealed
-                ? "src/assets/images/icon-plus.svg"
-                : "src/assets/images/icon-minus.svg"
-            })`,
+            backgroundImage: `url(${answerRevealed ? iconMinus : iconPlus})`,
           }}
           aria-expanded={answerRevealed}
           aria-controls={`answer-${id}`}
