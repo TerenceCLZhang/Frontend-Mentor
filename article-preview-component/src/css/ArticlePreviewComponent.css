@@ -1,0 +1,47 @@
+.article-preview-component {
+  overflow: hidden;
+}
+
+.article-img {
+  width: 100%;
+  height: 225px;
+  background-image: url(../images/drawers.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-contents {
+  color: var(--desaturated-dark-blue);
+}
+
+.main-contents > * {
+  padding: 2.2rem;
+}
+
+.text-sec {
+  gap: 1rem;
+  padding-bottom: 1.15rem;
+}
+
+@media (min-width: 1024px) {
+  .article-preview-component {
+    flex-direction: row;
+    max-width: 725px;
+    overflow: visible;
+  }
+
+  .article-img {
+    height: 300.5px;
+    background-position: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex: 1.75;
+  }
+
+  .main-contents {
+    flex: 2;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
