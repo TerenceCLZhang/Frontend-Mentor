@@ -19,4 +19,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [NFT Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/nft-preview-card-component)               | [Live Demo](https://terenceclzhang-nft-preview-card-com.netlify.app/)   |
 | [3 Column Preview Card Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/3-column-preview-card-component)     | [Live Demo](https://terenceclzhang-3-column-preview-card.netlify.app/)  |
 | [FAQ Accordion](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/faq-accordion)                                         | [Live Demo](https://terenceclzhang-faq-accordion.netlify.app/)          |
-| [Article Preview Card](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/article-preview-component)                      | [Live Demo](https://terenceclzhang-article-preview-comp.netlify.app/)   |
+| [Article Preview Card](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/article-preview-component)                      | [Live Demo](https://terenceclzhang-article-preview-com.netlify.app/)   |
