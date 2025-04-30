@@ -13,7 +13,7 @@ function LowerSection() {
   const [showingShare, setShowingShare] = useState(false);
 
   return (
-    <section className={`lower-sec ${showingShare ? "showing-share" : ""}`}>
+    <div className={`lower-sec ${showingShare ? "showing-share" : ""}`}>
       <div className="left-container">
         <div className="author-info">
           <img
@@ -49,10 +49,11 @@ function LowerSection() {
       <button
         className="share-icon"
         onClick={() => setShowingShare(!showingShare)}
+        aria-label="Share this article"
       >
         <FontAwesomeIcon icon={faShare} className="icon" />
       </button>
-    </section>
+    </div>
   );
 }
 

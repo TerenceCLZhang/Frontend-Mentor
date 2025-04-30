@@ -83,7 +83,6 @@ Main Styles
 
 body,
 main,
-section,
 div {
   display: flex;
   flex-direction: column;
