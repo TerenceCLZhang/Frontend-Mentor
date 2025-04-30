@@ -95,8 +95,6 @@ body {
   font-weight: var(--fw-normal);
   font-family: "Manrope", sans-serif;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
   background-color: var(--light-grayish-blue);
   padding: 1.5rem;
 }

@@ -4,7 +4,11 @@ import LowerSection from "./LowerSection";
 function ArticlePreviewComponent() {
   return (
     <div className="article-preview-component">
-      <div className="article-img"></div>
+      <div
+        className="article-img"
+        role="img"
+        aria-label="Image of a drawer"
+      ></div>
 
       <div className="main-contents">
         <div className="text-sec">

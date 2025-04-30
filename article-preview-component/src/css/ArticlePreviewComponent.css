@@ -1,4 +1,6 @@
 .article-preview-component {
+  background-color: white;
+  border-radius: 10px;
   overflow: hidden;
 }
 
