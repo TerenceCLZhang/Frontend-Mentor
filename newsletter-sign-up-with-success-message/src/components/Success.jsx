@@ -1,14 +1,11 @@
 import "../css/Success.css";
+import success from "../assets/images/icon-success.svg";
 
 function Success() {
   return (
     <section className="success">
       <div className="main-contents mid-gap">
-        <img
-          src="src/assets/images/icon-success.svg"
-          alt=""
-          className="success-img"
-        />
+        <img src={success} alt="" className="success-img" />
         <h1>Thanks for subscribing!</h1>
         <p>
           A confirmation email has been sent to{" "}
