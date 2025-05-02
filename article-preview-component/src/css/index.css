@@ -123,6 +123,12 @@ a:visited {
   font-weight: var(--fw-bold);
 }
 
+@media (min-width: 768px) {
+  .body {
+    padding: 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
   h1 {
     font-size: 1.25rem;

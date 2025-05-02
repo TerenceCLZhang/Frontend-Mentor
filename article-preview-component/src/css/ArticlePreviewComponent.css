@@ -26,6 +26,12 @@
   padding-bottom: 1.15rem;
 }
 
+@media (min-width: 768px) {
+  .article-preview-component {
+    max-width: 650px;
+  }
+}
+
 @media (min-width: 1024px) {
   .article-preview-component {
     flex-direction: row;
