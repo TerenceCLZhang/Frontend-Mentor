@@ -19,7 +19,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setHasBlurred(true); // Show error if form was submitted
-    if (isValidEmail) navigate("/success");
+    if (isValidEmail) navigate("/success", { state: { email } });
   };
 
   return (
