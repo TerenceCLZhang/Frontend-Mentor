@@ -53,6 +53,10 @@
   }
 }
 
+.wrap {
+  word-break: break-all;
+}
+
 @media (min-width: 1024px) {
   .success {
     max-width: 500px;

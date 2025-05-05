@@ -13,8 +13,8 @@ function Success() {
         <h1>Thanks for subscribing!</h1>
         <p>
           A confirmation email has been sent to{" "}
-          <span className="bold">{email}</span>. Please open it and click the
-          button inside to confirm your subscription.
+          <span className="bold wrap">{email}</span>. Please open it and click
+          the button inside to confirm your subscription.
         </p>
       </div>
       <a href="/" className="dismiss">
