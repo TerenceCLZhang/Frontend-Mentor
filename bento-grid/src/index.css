@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-purple-100: hsl(254, 88%, 90%);
+  --color-purple-500: hsl(256, 67%, 59%);
+
+  --color-yellow-100: hsl(31, 66%, 93%);
+  --color-yellow-500: hsl(39, 100%, 71%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 7%);
+}
+
+@layer components {
+  h2 {
+    @apply font-medium text-2xl/7 md:text-4xl/8;
+  }
+
+  h5 {
+    @apply text-3xl/8 font-medium md:text-[2.75rem]/10;
+  }
+
+  .bento-section {
+    @apply flex flex-col rounded-2xl shadow-2xl w-full lg:w-full lg:h-full;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  padding: 1rem;
+  min-height: 100vh;
+}
