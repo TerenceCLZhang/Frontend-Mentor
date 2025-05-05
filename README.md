@@ -22,3 +22,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Article Preview Card](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/article-preview-component)                                  | [Live Demo](https://terenceclzhang-article-preview-com.netlify.app/)    |
 | [Newsletter Sign Up With Success Message](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/newsletter-sign-up-with-success-message) | [Live Demo](https://terenceclzhang-newsletter-sign-up.netlify.app/)     |
 | [Advice Generator App](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/advice-generator-app)                                       | [Live Demo](https://terenceclzhang-advice-generator-app.netlify.app/)   |
+| [Bento Grid](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/bento-grid)                                                           | [Live Demo](https://terenceclzhang-bento-grid.netlify.app/)   |
