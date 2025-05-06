@@ -13,7 +13,7 @@ const TypeLabel = ({ checkedValue, value, handleChange, label }) => {
         checked && "bg-lime/10 border-lime"
       }`}
     >
-      <div
+      <span
         className={`border flex items-center justify-center w-5 h-5 rounded-full group-hover:border-lime ${
           checked ? "border-lime" : "border-slate-700"
         }`}
@@ -26,7 +26,7 @@ const TypeLabel = ({ checkedValue, value, handleChange, label }) => {
           onChange={handleChange}
           value={value}
         />
-      </div>
+      </span>
 
       <span>{label}</span>
     </label>

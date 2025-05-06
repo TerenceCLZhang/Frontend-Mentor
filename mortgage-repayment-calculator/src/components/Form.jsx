@@ -53,10 +53,10 @@ const Form = ({ data, setData, reset }) => {
         type="submit"
         className="w-full bg-lime p-4 rounded-4xl text-slate-900 font-bold text-lg cursor-pointer hover:opacity-80 lg:w-fit lg:px-10"
       >
-        <div className=" flex items-center justify-center gap-2">
-          <div className="bg-calculator w-[24px] h-[24px]"></div>
+        <span className="flex items-center justify-center gap-2">
+          <span className="bg-calculator w-[24px] h-[24px]"></span>
           <span>Calculate Repayments</span>
-        </div>
+        </span>
       </button>
     </form>
   );
