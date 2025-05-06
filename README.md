@@ -31,3 +31,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Newsletter Sign Up With Success Message](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/newsletter-sign-up-with-success-message) | [Live Demo](https://terenceclzhang-newsletter-sign-up.netlify.app/)    |
 | [Advice Generator App](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/advice-generator-app)                                       | [Live Demo](https://terenceclzhang-advice-generator-app.netlify.app/)  |
 | [Bento Grid](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/bento-grid)                                                           | [Live Demo](https://terenceclzhang-bento-grid.netlify.app/)            |
+| [Mortgage Repayment Calculator](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/mortgage-repayment-calculator)                     | [Live Demo](https://terenceclzhang-mortgage-calculator.netlify.app/)   |
