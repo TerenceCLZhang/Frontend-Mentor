@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-soft-orange: hsl(35, 77%, 62%);
+  --color-soft-red: hsl(5, 85%, 63%);
+
+  --color-off-white: hsl(36, 100%, 99%);
+  --color-grayish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayish-blue: hsl(236, 13%, 42%);
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+
+  --font-family-sans: "Inter", sans-serif;
+}
+
+@layer components {
+  .padding {
+    @apply px-4 py-8;
+  }
+
+  .hover-red {
+    @apply hover:text-soft-red;
+  }
+}
+
+body {
+  @apply font-sans min-h-screen text-[15px] text-very-dark-blue bg-off-white lg:text-lg;
+}
