@@ -5,7 +5,7 @@ import gamingGrowth from "../assets/images/image-gaming-growth.jpg";
 
 const MainArticles = () => {
   return (
-    <article className="flex flex-col gap-7 items-center justify-between lg:justify-center lg:flex-wrap lg:flex-row xl:flex-nowrap">
+    <div className="flex flex-col gap-7 items-center justify-between lg:justify-center lg:flex-wrap lg:flex-row xl:flex-nowrap">
       {[
         {
           img: retroPCs,
@@ -35,7 +35,7 @@ const MainArticles = () => {
           description={item.description}
         />
       ))}
-    </article>
+    </div>
   );
 };
 
