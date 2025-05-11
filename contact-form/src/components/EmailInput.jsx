@@ -5,6 +5,7 @@ const EmailInput = ({ register, error, rules }) => {
         Email Address <span className="text-green-600">*</span>
       </label>
       <input
+        id="email"
         type="text"
         className={`inputs ${error && "border-red"}`}
         {...register("email", rules)}
