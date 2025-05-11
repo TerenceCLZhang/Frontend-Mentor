@@ -1,9 +1,9 @@
 const EmailInput = ({ register, error, rules }) => {
   return (
     <div className="flex flex-col gap-1">
-      <span>
+      <label htmlFor="email">
         Email Address <span className="text-green-600">*</span>
-      </span>
+      </label>
       <input
         type="text"
         className={`inputs ${error && "border-red"}`}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Form from "./components/Form";
-import AnimatedSuccessNotification from "./AnimatedSuccessNotification";
+import AnimatedSuccessNotification from "./components/AnimatedSuccessNotification";
 
 function App() {
   const [showSuccess, setShowSuccess] = useState(false);

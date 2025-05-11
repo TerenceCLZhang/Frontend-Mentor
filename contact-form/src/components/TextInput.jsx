@@ -1,9 +1,9 @@
 const TextInput = ({ label, name, register, rules, error }) => {
   return (
     <div className="flex flex-col gap-1 lg:w-1/2">
-      <span>
+      <label htmlFor={label}>
         {label} <span className="text-green-600">*</span>
-      </span>
+      </label>
       <input
         type="text"
         className={`inputs ${error && "border-red"}`}

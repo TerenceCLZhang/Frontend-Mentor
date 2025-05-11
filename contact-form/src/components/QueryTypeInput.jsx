@@ -3,10 +3,13 @@ import QueryTypeIndividual from "./QueryTypeIndividual";
 const QueryTypeInput = ({ register, error, rules, watch }) => {
   return (
     <div className="flex flex-col gap-3">
-      <span>
+      <label htmlFor="type">
         Query Type <span className="text-green-600">*</span>
-      </span>
-      <div className="flex flex-col gap-3 lg:flex-row lg:justify-between">
+      </label>
+      <div
+        id="type"
+        className="flex flex-col gap-3 lg:flex-row lg:justify-between"
+      >
         {["General Enquiry", "Support Request"].map((item) => (
           <QueryTypeIndividual
             key={item}

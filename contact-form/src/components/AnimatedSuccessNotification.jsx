@@ -1,4 +1,4 @@
-import SuccessNotification from "./components/SuccessNotification";
+import SuccessNotification from "./SuccessNotification";
 import { AnimatePresence, motion } from "framer-motion";
 
 const AnimatedSuccessNotification = ({ showSuccess, setShowSuccess }) => {

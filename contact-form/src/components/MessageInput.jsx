@@ -1,7 +1,7 @@
 const MessageInput = ({ register, error, rules }) => {
   return (
     <div className="flex flex-col gap-2">
-      <span>Message * </span>
+      <label htmlFor="message">Message * </label>
       <textarea
         className={`inputs resize-none ${error ? "border-red" : ""}`}
         rows={5}
