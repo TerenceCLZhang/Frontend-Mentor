@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "post",
+    "name": "Mark Webber",
+    "avatar": "/images/avatar-mark-webber.webp",
+    "postTitle": "My First tournament",
+    "time": "1m",
+    "unread": true
+  },
+  {
+    "id": 2,
+    "type": "follow",
+    "name": "Angela Gray",
+    "avatar": "/images/avatar-angela-gray.webp",
+    "time": "5m",
+    "unread": true
+  },
+  {
+    "id": 3,
+    "type": "group",
+    "name": "Jacob Thompson",
+    "avatar": "/images/avatar-jacob-thompson.webp",
+    "groupName": "Chess Club",
+    "time": "1 day",
+    "joined": true,
+    "unread": true
+  },
+  {
+    "id": 4,
+    "type": "message",
+    "name": "Rizky Hasanuddin",
+    "avatar": "/images/avatar-rizky-hasanuddin.webp",
+    "time": "5 days",
+    "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    "unread": false
+  },
+  {
+    "id": 5,
+    "type": "picture",
+    "name": "Kimberly Smith",
+    "avatar": "/images/avatar-kimberly-smith.webp",
+    "img": "/images/image-chess.webp",
+    "imgAlt": "woman and chess board",
+    "time": "1 week",
+    "unread": false
+  },
+  {
+    "id": 6,
+    "type": "post",
+    "name": "Nathan Peterson",
+    "avatar": "/images/avatar-nathan-peterson.webp",
+    "postTitle": "5 end-game strategies to increase your win rate",
+    "time": "2 weeks",
+    "unread": false
+  },
+  {
+    "id": 7,
+    "type": "group",
+    "name": "Anna Kim",
+    "avatar": "/images/avatar-anna-kim.webp",
+    "groupName": "Chess Club",
+    "time": "2 weeks",
+    "joined": false,
+    "unread": false
+  }
+]
