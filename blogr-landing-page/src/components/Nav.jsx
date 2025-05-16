@@ -33,43 +33,42 @@ const Nav = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></button>
       </div>
-
+      
       {/* Mobile version */}
-      {isMenuOpen && (
-        <ul
-          id="mobile-navigation"
-          className={`${
-            isMenuOpen ? "flex" : "hidden"
-          } mt-8 bg-white p-8 rounded-md flex-col justify-center items-center gap-5 shadow-2xl lg:hidden`}
-          aria-label="Mobile main navigation"
-        >
-          {["Product", "Company", "Connect"].map((name) => (
-            <NavLinkWithDropDown
-              key={name}
-              page={{ name }}
-              sublinks={getSublinks(name)}
-              isOpen={currentMenu === name}
-              onToggle={() => handleToggleMenu(name)}
-            />
-          ))}
-          <hr className="border border-gray-600/25 w-full" />
-          <li className="nav-menu-btn mt-1">
-            <a href="#" role="menuitem">
-              Login
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-300 to-red-550 w-fit text-white py-3 px-10 text-xl rounded-full hover:from-red-400 hover:to-red-400"
-              role="menuitem"
-            >
-              Sign Up
-            </a>
-          </li>
-        </ul>
-      )}
-
+      <ul
+        id="mobile-navigation"
+        className={`${
+          isMenuOpen ? "flex" : "hidden"
+        } mt-8 bg-white p-8 rounded-md flex-col justify-center items-center gap-5 shadow-2xl lg:hidden`}
+        aria-label="Mobile main navigation"
+      >
+        {["Product", "Company", "Connect"].map((name) => (
+          <NavLinkWithDropDown
+            key={name}
+            page={{ name }}
+            sublinks={getSublinks(name)}
+            isOpen={currentMenu === name}
+            onToggle={() => handleToggleMenu(name)}
+          />
+        ))}
+        <hr className="border border-gray-600/25 w-full" />
+        <li className="nav-menu-btn mt-1">
+          <a href="#" role="menuitem">
+            Login
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="bg-gradient-to-r from-orange-300 to-red-550 w-fit text-white py-3 px-10 text-xl rounded-full hover:from-red-400 hover:to-red-400"
+            role="menuitem"
+          >
+            Sign Up
+          </a>
+        </li>
+      </ul>
+      
+      
       {/* Desktop version */}
       <ul className="hidden lg:flex items-center justify-between w-[85%] gap-10">
         <li>
