@@ -38,7 +38,9 @@ const Nav = () => {
       {isMenuOpen && (
         <ul
           id="mobile-navigation"
-          className="mt-8 bg-white p-8 rounded-md flex flex-col justify-center items-center gap-5 shadow-2xl lg:hidden"
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } mt-8 bg-white p-8 rounded-md flex-col justify-center items-center gap-5 shadow-2xl lg:hidden`}
           aria-label="Mobile main navigation"
         >
           {["Product", "Company", "Connect"].map((name) => (
@@ -70,30 +72,34 @@ const Nav = () => {
 
       {/* Desktop version */}
       <ul className="hidden lg:flex items-center justify-between w-[85%] gap-10">
-        <ul className="flex gap-10">
-          {["Product", "Company", "Connect"].map((name) => (
-            <NavLinkWithDropDown
-              key={name}
-              page={{ name }}
-              sublinks={getSublinks(name)}
-              isOpen={currentMenu === name}
-              onToggle={() => handleToggleMenu(name)}
-            />
-          ))}
-        </ul>
-        <ul>
-          <li className="ml-auto">
-            <a href="#" className="mr-6 hover:underline nav-menu-btn-desktop">
-              Login
-            </a>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-300 to-red-550 text-white py-3 px-10 text-xl font-bold rounded-full hover:from-red-400 hover:to-red-400 lg:from-white lg:to-white lg:text-red-500 lg:text-base lg:hover:text-white"
-            >
-              Sign Up
-            </a>
-          </li>
-        </ul>
+        <li>
+          <ul className="flex gap-10">
+            {["Product", "Company", "Connect"].map((name) => (
+              <NavLinkWithDropDown
+                key={name}
+                page={{ name }}
+                sublinks={getSublinks(name)}
+                isOpen={currentMenu === name}
+                onToggle={() => handleToggleMenu(name)}
+              />
+            ))}
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li className="ml-auto">
+              <a href="#" className="mr-6 hover:underline nav-menu-btn-desktop">
+                Login
+              </a>
+              <a
+                href="#"
+                className="bg-gradient-to-r from-orange-300 to-red-550 text-white py-3 px-10 text-xl font-bold rounded-full hover:from-red-400 hover:to-red-400 lg:from-white lg:to-white lg:text-red-500 lg:text-base lg:hover:text-white"
+              >
+                Sign Up
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
   );
