@@ -33,7 +33,7 @@ const Nav = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></button>
       </div>
-      
+
       {/* Mobile version */}
       <ul
         id="mobile-navigation"
@@ -49,26 +49,27 @@ const Nav = () => {
             sublinks={getSublinks(name)}
             isOpen={currentMenu === name}
             onToggle={() => handleToggleMenu(name)}
+            isMobile={true}
           />
         ))}
-        <hr className="border border-gray-600/25 w-full" />
+        <li
+          role="separator"
+          aria-hidden="true"
+          className="border border-gray-600/25 w-full"
+        ></li>
         <li className="nav-menu-btn mt-1">
-          <a href="#" role="menuitem">
-            Login
-          </a>
+          <a href="#">Login</a>
         </li>
         <li>
           <a
             href="#"
             className="bg-gradient-to-r from-orange-300 to-red-550 w-fit text-white py-3 px-10 text-xl rounded-full hover:from-red-400 hover:to-red-400"
-            role="menuitem"
           >
             Sign Up
           </a>
         </li>
       </ul>
-      
-      
+
       {/* Desktop version */}
       <ul className="hidden lg:flex items-center justify-between w-[85%] gap-10">
         <li>
@@ -80,6 +81,7 @@ const Nav = () => {
                 sublinks={getSublinks(name)}
                 isOpen={currentMenu === name}
                 onToggle={() => handleToggleMenu(name)}
+                isMobile={false}
               />
             ))}
           </ul>

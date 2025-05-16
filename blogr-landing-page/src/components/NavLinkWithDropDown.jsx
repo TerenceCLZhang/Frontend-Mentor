@@ -1,4 +1,10 @@
-const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
+const NavLinkWithDropDown = ({
+  page,
+  sublinks,
+  isOpen,
+  onToggle,
+  isMobile,
+}) => {
   return (
     <li className="relative flex flex-col items-center w-full">
       <div className="flex items-center justify-center gap-2 mb-3 lg:mb-0">
@@ -19,13 +25,15 @@ const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
           onClick={onToggle}
           aria-haspopup="menu"
           aria-expanded={isOpen}
-          aria-controls={`dropdown-${page.name}`}
+          aria-controls={`dropdown-${page.name}-${
+            isMobile ? "mobile" : "desktop"
+          }`}
           aria-label={`Toggle dropdown for ${page.name}`}
         ></button>
       </div>
 
       <ul
-        id={`dropdown-${page.name}`}
+        id={`dropdown-${page.name}-${isMobile ? "mobile" : "desktop"}`}
         className={`${
           isOpen ? "flex" : "hidden"
         } w-full text-center text-lg text-blue-900/75 bg-gray-600/15 rounded-lg p-5 flex-col gap-3 lg:absolute lg:bg-white lg:-left-5 lg:top-10 lg:text-left lg:w-[175px] lg:drop-shadow-xl lg:shadow-2xl`}
