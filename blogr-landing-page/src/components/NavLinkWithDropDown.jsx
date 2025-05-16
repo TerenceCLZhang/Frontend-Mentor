@@ -1,6 +1,6 @@
 const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
   return (
-    <li className="w-full relative">
+    <ul className="w-full relative">
       <li className="flex items-center justify-center gap-2 mb-3 lg:mb-0">
         <h3>
           <a
@@ -42,7 +42,7 @@ const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
           ))}
         </ul>
       )}
-    </li>
+    </ul>
   );
 };
 

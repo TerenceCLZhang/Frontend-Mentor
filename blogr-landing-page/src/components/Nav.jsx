@@ -37,6 +37,7 @@ const Nav = () => {
       {/* Mobile version */}
       {isMenuOpen && (
         <ul
+          id="mobile-navigation"
           className="mt-8 bg-white p-8 rounded-md flex flex-col justify-center items-center gap-5 shadow-2xl lg:hidden"
           aria-label="Mobile main navigation"
         >
@@ -69,7 +70,7 @@ const Nav = () => {
 
       {/* Desktop version */}
       <ul className="hidden lg:flex items-center justify-between w-[85%] gap-10">
-        <li className="flex gap-10">
+        <ul className="flex gap-10">
           {["Product", "Company", "Connect"].map((name) => (
             <NavLinkWithDropDown
               key={name}
@@ -79,8 +80,8 @@ const Nav = () => {
               onToggle={() => handleToggleMenu(name)}
             />
           ))}
-        </li>
-        <li>
+        </ul>
+        <ul>
           <li className="ml-auto">
             <a href="#" className="mr-6 hover:underline nav-menu-btn-desktop">
               Login
@@ -92,7 +93,7 @@ const Nav = () => {
               Sign Up
             </a>
           </li>
-        </li>
+        </ul>
       </ul>
     </nav>
   );
