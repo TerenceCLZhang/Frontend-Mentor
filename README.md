@@ -36,3 +36,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Tip Calculator App](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/tip-calculator-app)                                           | [Live Demo](https://terenceclzhang-tip-calculator.netlify.app/)        |
 | [Contact Form](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/contact-form)                                                       | [Live Demo](https://terenceclzhang-contact-form.netlify.app/)          |
 | [Notifications Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/notifications-page)                                           | [Live Demo](https://terenceclzhang-notifications.netlify.app/)         |
+| [Blogr Landing Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/blogr-landing-page)                                           | [Live Demo](https://terenceclzhang-blogr-landing.netlify.app/)         |

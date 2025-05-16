@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-red-500: hsl(356, 100%, 66%);
+  --color-red-400: hsl(355, 100%, 74%);
+  --color-blue-900: hsl(208, 49%, 24%);
+
+  --color-white: hsl(0, 100%, 100%);
+  --color-gray-600: hsl(207, 13%, 34%);
+  --color-gray-900: hsl(240, 10%, 16%);
+
+  --color-orange-300: hsl(13, 100%, 72%);
+  --color-red-550: hsl(353, 100%, 62%);
+
+  --color-purple-950: hsl(237, 17%, 21%);
+  --color-purple-900: hsl(237, 23%, 31%);
+
+  /* Font weights: light and semibold */
+  --font-overpass: "Overpass", sans-serif;
+
+  /* Font weights: base, medium, bold */
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+@layer components {
+  .padding {
+    @apply px-8 py-10 lg:px-20 xl:px-45;
+  }
+
+  .nav-menu-btn {
+    @apply text-xl text-blue-900 font-semibold hover:underline;
+  }
+
+  .nav-menu-btn-desktop {
+    @apply lg:text-base lg:text-white lg:font-normal;
+  }
+
+  .header-btn {
+    @apply font-bold p-3 w-[43%] rounded-full m-auto md:w-40;
+  }
+
+  .text-section-div {
+    @apply flex flex-col gap-7;
+  }
+}
+
+body {
+  @apply font-overpass min-h-screen;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-ubuntu;
+}
+
+h2 {
+  @apply text-blue-900 font-medium text-2xl mx-4 lg:mx-0 lg:text-3xl;
+}
