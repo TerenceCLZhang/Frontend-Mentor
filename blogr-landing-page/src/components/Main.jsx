@@ -68,7 +68,7 @@ const Main = () => {
           <source media="(min-width: 1024px)" srcSet={laptopDesktop} />
           <img src={laptopMobile} alt="" className="w-full h-auto" />
         </picture>
-        <div className="padding flex flex-col gap-10 text-gray-600 pb-10 md:pb-25 lg:pb-auto lg:text-left lg:w-[60%] lg:self-end">
+        <div className="padding flex flex-col gap-10 text-gray-600pb-10 md:pb-25 lg:pb-0 lg:text-left lg:w-[60%] lg:self-end">
           <div className="text-section-div">
             <h2>Free, open, simple</h2>
             <p>
