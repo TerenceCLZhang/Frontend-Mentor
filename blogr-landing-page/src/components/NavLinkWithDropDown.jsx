@@ -1,7 +1,7 @@
 const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
   return (
     <li className="w-full relative">
-      <div className="flex items-center justify-center gap-2 mb-3 lg:mb-0">
+      <li className="flex items-center justify-center gap-2 mb-3 lg:mb-0">
         <h3>
           <a
             href={page.href || "#"}
@@ -17,16 +17,24 @@ const NavLinkWithDropDown = ({ page, sublinks, isOpen, onToggle }) => {
             isOpen ? "rotate-180" : ""
           }`}
           onClick={onToggle}
-          aria-label="Toggle sublinks menu"
+          aria-haspopup="menu"
+          aria-expanded={isOpen}
+          aria-controls={`dropdown-${page.name}`}
+          aria-label={`Toggle dropdown for ${page.name}`}
         ></button>
-      </div>
+      </li>
+
       {isOpen && (
-        <ul className="text-center text-lg text-blue-900/75 bg-gray-600/15 rounded-lg p-5 flex flex-col gap-3 lg:absolute lg:bg-white lg:-left-5 lg:top-12 lg:text-left lg:w-[175px] lg:drop-shadow-xl lg:shadow-2xl">
+        <ul
+          className="text-center text-lg text-blue-900/75 bg-gray-600/15 rounded-lg p-5 flex flex-col gap-3 lg:absolute lg:bg-white lg:-left-5 lg:top-15 lg:text-left lg:w-[175px] lg:drop-shadow-xl lg:shadow-2xl"
+          role="menu"
+        >
           {sublinks.map((item, index) => (
             <li key={index}>
               <a
                 href={item.href || "#"}
                 className="hover:font-bold hover:text-gray-900"
+                role="menuitem"
               >
                 {item.label}
               </a>
