@@ -1,4 +1,5 @@
 import { useEffect, useState, type JSX } from "react";
+import CountUp from "react-countup";
 
 interface Props {
   date: Date | null;
@@ -47,20 +48,24 @@ const AgeContainer = ({ date }: Props): JSX.Element => {
     }
   }, [date]);
 
+  const renderAgeSegment = (
+    value: number | null,
+    singular: string,
+    plural: string
+  ) => (
+    <p>
+      <span className="text-purple-500">
+        {value ? <CountUp end={value} duration={0.5} /> : "--"}{" "}
+      </span>{" "}
+      {value === 1 ? singular : plural}
+    </p>
+  );
+
   return (
     <div className="self-start flex flex-col gap-3 italic text-5xl mt-5 md:mt-0 font-extrabold md:text-7xl xl:text-8xl">
-      <p>
-        <span className="text-purple-500">{age.years ?? "--"}</span>{" "}
-        {age.years === 1 ? "year" : "years"}
-      </p>
-      <p>
-        <span className="text-purple-500">{age.months ?? "--"}</span>{" "}
-        {age.months === 1 ? "month" : "months"}
-      </p>
-      <p>
-        <span className="text-purple-500">{age.days ?? "--"}</span>{" "}
-        {age.days === 1 ? "day" : "days"}
-      </p>
+      {renderAgeSegment(age.years, "year", "years")}
+      {renderAgeSegment(age.months, "month", "months")}
+      {renderAgeSegment(age.days, "day", "days")}
     </div>
   );
 };
