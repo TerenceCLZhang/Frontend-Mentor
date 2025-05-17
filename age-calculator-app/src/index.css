@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-purple-500: hsl(259, 100%, 65%);
+  --color-red-400: hsl(0, 100%, 67%);
+
+  --color-white: hsl(0, 100%, 100%);
+  --color-grey-100: hsl(0, 0%, 94%);
+  --color-grey-200: hsl(0, 0%, 86%);
+  --color-grey-500: hsl(0, 1%, 44%);
+  --color-black: hsl(0, 0%, 0%);
+
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@layer components {
+  .input-container {
+    @apply flex flex-col gap-2;
+  }
+
+  .input-label {
+    @apply text-sm uppercase text-grey-500 tracking-widest md:text-lg;
+  }
+
+  .inputs {
+    @apply border border-grey-200 rounded-md w-full p-2 text-2xl md:text-3xl hover:border-purple-500 focus:outline-purple-500;
+  }
+
+  .error-msg {
+    @apply text-red-400 text-sm italic;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  @apply min-h-screen font-poppins text-[32px] flex items-center justify-center bg-grey-100 font-bold;
+}

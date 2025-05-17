@@ -37,3 +37,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Contact Form](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/contact-form)                                                       | [Live Demo](https://terenceclzhang-contact-form.netlify.app/)          |
 | [Notifications Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/notifications-page)                                           | [Live Demo](https://terenceclzhang-notifications.netlify.app/)         |
 | [Blogr Landing Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/blogr-landing-page)                                           | [Live Demo](https://terenceclzhang-blogr-landing.netlify.app/)         |
+| [Age Calculator App](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/age-calculator-app)                                           | [Live Demo](https://terenceclzhang-age-calculator.netlify.app/)        |
