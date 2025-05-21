@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-red: hsl(0, 100%, 68%);
+
+  --color-very-dark-blue: hsl(230, 29%, 20%);
+  --color-dark-grayish-blue: hsl(230, 11%, 40%);
+  --color-grayish-blue: hsl(231, 7%, 65%);
+  --color-light-grayish-blue: hsl(207, 33%, 95%);
+
+  /* Headings, Call-to-actions, Navigation */
+  --font-barlow-c: "Barlow Condensed", sans-serif;
+
+  /* Body */
+  --font-barlow: "Barlow", sans-serif;
+}
+
+@layer components {
+  .padding {
+    @apply px-7;
+  }
+
+  .nav-menu-btn {
+    @apply font-bold text-very-dark-blue hover:underline;
+  }
+}
+
+body {
+  @apply text-lg font-barlow text-very-dark-blue min-h-screen flex justify-center;
+}

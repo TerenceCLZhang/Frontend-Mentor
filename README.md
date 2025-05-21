@@ -38,3 +38,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Notifications Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/notifications-page)                                           | [Live Demo](https://terenceclzhang-notifications.netlify.app/)         |
 | [Blogr Landing Page](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/blogr-landing-page)                                           | [Live Demo](https://terenceclzhang-blogr-landing.netlify.app/)         |
 | [Age Calculator App](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/age-calculator-app)                                           | [Live Demo](https://terenceclzhang-age-calculator.netlify.app/)        |
+| [Project Tracking Intro Component](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/project-tracking-intro-component)               | [Live Demo](https://terenceclzhang-project-tracking-intro.netlify.app/)        |
