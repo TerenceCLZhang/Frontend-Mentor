@@ -14,6 +14,7 @@ const Header = () => {
       </a>
 
       <button
+        type="button"
         className={`${
           !navOpen
             ? "bg-[url(images/icon-hamburger.svg)]"
