@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-purple-600: hsl(246, 80%, 60%);
+
+  --color-orange-300: hsl(15, 100%, 70%); /* work */
+  --color-blue-300: hsl(195, 74%, 62%); /* play */
+  --color-pink-400: hsl(348, 100%, 68%); /* study */
+  --color-green-400: hsl(145, 58%, 55%); /* exercise */
+  --color-purple-700: hsl(264, 64%, 52%); /* social */
+  --color-yellow-300: hsl(43, 84%, 65%); /* self care */
+
+  --color-navy-950: hsl(226, 43%, 10%);
+  --color-navy-900: hsl(235, 46%, 20%);
+  --color-purple-500: hsl(235, 45%, 61%);
+  --color-navy-200: hsl(236, 100%, 87%);
+
+  --color-navy-700: hsl(235, 46%, 25%);
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-rubik text-lg bg-navy-950 min-h-screen p-8 flex justify-center items-center text-navy-200;
+  }
+}
+
+@layer components {
+  .padding {
+    @apply p-8;
+  }
+
+  .rounded-edge {
+    @apply rounded-2xl;
+  }
+
+  .option {
+    @apply text-purple-500 capitalize cursor-pointer hover:text-navy-200;
+  }
+
+  .option-selected {
+    @apply !text-white;
+  }
+}
