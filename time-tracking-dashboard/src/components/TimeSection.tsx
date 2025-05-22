@@ -37,7 +37,11 @@ const TimeSection = ({ label, value, valueBefore }: Props) => {
       <div className="padding rounded-edge bg-navy-900 w-full hover:bg-navy-700">
         <div className=" flex justify-between">
           <h2 className="font-bold text-white">{label}</h2>
-          <button className="bg-[url(images/icon-ellipsis.svg)] bg-center bg-no-repeat h-7 w-7 cursor-pointer"></button>
+          <button
+            type="button"
+            aria-label="More information"
+            className="bg-[url(images/icon-ellipsis.svg)] bg-center bg-no-repeat h-7 w-7 cursor-pointer"
+          ></button>
         </div>
         <div className="flex justify-between items-center mt-2 lg:flex-col lg:items-start lg:gap-3 lg:mt-7">
           <span className="text-white text-3xl font-light xl:text-5xl">
