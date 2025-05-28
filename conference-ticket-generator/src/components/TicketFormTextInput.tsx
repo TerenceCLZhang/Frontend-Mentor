@@ -21,10 +21,11 @@ const TicketFormTextInput = ({
 }: Props) => {
   return (
     <div className="form-input-container">
-      <label htmlFor="name" className="form-label">
+      <label htmlFor={name} className="form-label">
         {label}
       </label>
       <input
+        id={name}
         type="text"
         className={`input-text bg-overlay ${error && "!border-orange-700"}`}
         placeholder={placeholder}
