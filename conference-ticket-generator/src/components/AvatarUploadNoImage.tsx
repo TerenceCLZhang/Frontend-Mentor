@@ -66,6 +66,7 @@ const AvatarUploadNoImage = ({
               <img src={iconUpload} alt="Drop image here" />
             </div>
             <input
+              id="avatar-upload"
               {...getInputProps()}
               ref={setInputRef}
               className="absolute top-0 left-0 h-full w-full cursor-pointer opacity-0"

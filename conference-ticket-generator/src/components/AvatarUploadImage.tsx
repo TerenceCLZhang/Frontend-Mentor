@@ -15,11 +15,13 @@ const AvatarUploadImage = ({
         !previewURL && "hidden"
       } p-5 flex flex-col items-center justify-center gap-4`}
     >
-      <img
-        src={previewURL as string}
-        alt="Uploaded avatar"
-        className="w-20 h-20 border-2 border-neutral-500 rounded-lg object-cover object-center"
-      />
+      {previewURL && (
+        <img
+          src={previewURL as string}
+          alt="Uploaded avatar"
+          className="w-20 h-20 border-2 border-neutral-500 rounded-lg object-cover object-center"
+        />
+      )}
       <div className="flex gap-3">
         <button
           type="button"

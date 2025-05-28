@@ -49,6 +49,7 @@ const TicketForm = () => {
     if (!value.startsWith("@") && value.length > 0) {
       value = "@" + value;
     }
+    value = value.replace(/ /g, "_");
     setValue("username", value);
   };
 
@@ -90,11 +91,12 @@ const TicketForm = () => {
         handleOnBlur={addAtSymbol}
       />
 
-      <input
+      <button
         type="submit"
-        value="Generate My Ticket"
         className="bg-linear-to-r from-orange-700 to-orange-500 text-neutral-900 font-extrabold rounded-xl p-3 mt-1 cursor-pointer hover:to-orange-700 hover:shadow-[0_4px_0_0_hsl(7,_88%,_67%)]"
-      />
+      >
+        Generate My Ticket
+      </button>
     </form>
   );
 };

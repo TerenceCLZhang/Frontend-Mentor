@@ -19,7 +19,7 @@ const TicketFilled = ({ avatar, name, username }: Props) => {
   };
 
   return (
-    <div className="mt-10 relative text-sm md:w-[75%] xl:w-[60%] 2xl:w-[50%]">
+    <div className="my-10 relative text-sm md:w-[75%] xl:w-[60%] 2xl:w-[50%]">
       <img src={ticketPattern} alt="" className="m-auto" />
       <div className="absolute top-5 left-5 xl:top-7 xl:left-7 flex gap-2">
         <img src={logo} alt="" className="w-7 h-7" />
@@ -35,10 +35,10 @@ const TicketFilled = ({ avatar, name, username }: Props) => {
           className="w-10 h-10 rounded-lg object-cover object-center md:w-12 md:h-12"
         />
         <div>
-          <span className="text-lg/1 text-ellipsis xl:text-xl">{name}</span>
+          <span className="text-lg/1 xl:text-xl">{name}</span>
           <div className="flex items-center gap-1">
             <img src={github} alt="" className="inline-block w-5 h-5" />
-            <span className="text-ellipsis">{username}</span>
+            <span>{username}</span>
           </div>
         </div>
       </div>
