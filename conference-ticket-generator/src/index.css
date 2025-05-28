@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(252, 6%, 83%);
+  --color-neutral-500: hsl(245, 15%, 58%);
+  --color-neutral-700: hsl(245, 19%, 35%);
+  --color-neutral-900: hsl(248, 70%, 10%);
+
+  --color-orange-500: hsl(7, 88%, 67%);
+  --color-orange-700: hsl(7, 71%, 60%);
+
+  /* Gradient Text */
+  --color-gradient-text-start: hsl(7, 86%, 67%);
+  --color-gradient-text-end: hsl(0, 0%, 100%);
+
+  /*Weights: 400, 500, 700, 800 */
+  --font-inconsolata: "Inconsolata", monospace;
+}
+
+@layer base {
+  body {
+    @apply relative flex justify-center text-xl min-h-screen font-inconsolata bg-[url(assets/images/background-mobile.png)] md:bg-[url(assets/images/background-tablet.png)] lg:bg-[url(assets/images/background-desktop.png)] bg-no-repeat bg-bottom-right md:bg-center bg-cover text-neutral-300 px-5 pt-10 pb-30;
+  }
+
+  h1 {
+    @apply text-3xl font-extrabold text-neutral-100 md:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-neutral-100 text-2xl/4 2xl:text-3xl/5 font-bold mb-3;
+  }
+}
+
+@layer components {
+  .form-input-container {
+    @apply flex flex-col gap-2;
+  }
+
+  .input-text {
+    @apply rounded-xl border border-neutral-500 p-3 placeholder:text-neutral-500 cursor-pointer  focus:outline-2 focus:outline-offset-2 focus:outline-neutral-500;
+  }
+
+  .form-label {
+    @apply text-neutral-100 font-bold;
+  }
+
+  .bg-overlay {
+    @apply bg-neutral-300/7 hover:bg-neutral-300/20;
+  }
+
+  .error-msg {
+    @apply flex items-center text-orange-700 text-xs;
+  }
+
+  .icon-fill-error {
+    @apply stroke-orange-700;
+  }
+
+  .avatar-btn {
+    @apply text-base w-fit bg-neutral-500/20 py-1 px-3 rounded-lg cursor-pointer;
+  }
+
+  .bg-img {
+    @apply bg-no-repeat w-full h-full absolute top-0 left-0 -z-10;
+  }
+}
