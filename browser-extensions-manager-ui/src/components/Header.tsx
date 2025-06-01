@@ -1,14 +1,21 @@
+import type { ThemeType } from "../App";
+
 interface Props {
+  theme: ThemeType;
   toggleTheme: () => void;
 }
 
-const Header = ({ toggleTheme }: Props) => {
+const Header = ({ theme, toggleTheme }: Props) => {
   return (
     <header className="bg-neutral-0 dark:bg-neutral-800 w-full flex items-center justify-between p-3 rounded-xl shadow">
       <Logo />
       <button
+        type="button"
         onClick={toggleTheme}
         className="bg-neutral-100 dark:bg-neutral-600 bg-[url(assets/images/icon-moon.svg)] dark:bg-[url(assets/images/icon-sun.svg)] w-13 bg-size-[45%] aspect-square bg-no-repeat bg-center p-3 rounded-xl focus-red hover:bg-neutral-300 dark:hover:bg-neutral-500"
+        aria-label={`Change theme to ${
+          theme === "light" ? "dark" : "light"
+        } mode`}
       ></button>
     </header>
   );

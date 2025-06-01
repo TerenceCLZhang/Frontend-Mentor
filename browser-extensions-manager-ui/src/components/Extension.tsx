@@ -25,6 +25,7 @@ const Extention = ({
       </div>
       <div className="flex items-center justify-between">
         <button
+          type="button"
           onClick={() => deleteExtension(name)}
           className="border-neutral btns focus-red focus-visible:bg-neutral-100 dark:focus-visible:bg-neutral-600 hover:bg-red-700 hover:opacity-100 hover:text-neutral-0 dark:hover:text-neutral-900 dark:hover:bg-red-500"
         >

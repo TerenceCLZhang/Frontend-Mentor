@@ -24,11 +24,11 @@ const Toggle = ({ isActive, changeIsActive }: Props) => {
           : "Click to activate extension"
       }
     >
-      <div
+      <span
         className={`h-4 w-4 rounded-full absolute top-1/2 -translate-y-1/2 transition-all duration-100 ${
           isActive ? "left-6" : "left-1"
         } bg-neutral-0`}
-      ></div>
+      ></span>
     </button>
   );
 };

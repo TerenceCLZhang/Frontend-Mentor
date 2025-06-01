@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 
-type ThemeType = "light" | "dark";
+export type ThemeType = "light" | "dark";
 
 function App() {
   const [theme, setTheme] = useState<ThemeType>("light");
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="flex flex-col gap-10 items-center w-[90vw] mb-10 lg:w-[85vw] lg:mt-5 lg:gap-15">
-      <Header toggleTheme={toggleTheme} />
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <Main />
     </div>
   );
