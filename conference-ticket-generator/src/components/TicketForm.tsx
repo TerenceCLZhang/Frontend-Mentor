@@ -18,9 +18,20 @@ const ticketSchema = z.object({
     .refine((fileList) => fileList[0]?.size <= MAX_FILE_SIZE, {
       message: "File too large. Please upload a photo under 500KB.",
     }),
-  name: z.string().trim().min(1, "Please enter your full name."),
+  name: z
+    .string()
+    .trim()
+    .min(1, "Please enter your full name.")
+    .max(
+      150,
+      "Please keep your name under 150 characters. You can abbreviate if needed."
+    ),
   email: z.string().trim().email("Please enter a valid email address."),
-  username: z.string().trim().min(1, "Please enter your GitHub username."),
+  username: z
+    .string()
+    .trim()
+    .min(1, "Please enter your GitHub username.")
+    .max(40, "GitHub username must be 39 characters or fewer."),
 });
 
 export type FormData = z.infer<typeof ticketSchema>;
