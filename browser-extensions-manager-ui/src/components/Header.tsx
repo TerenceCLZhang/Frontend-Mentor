@@ -1,5 +1,3 @@
-import logo from "../assets/images/logo.svg";
-
 interface Props {
   toggleTheme: () => void;
 }
