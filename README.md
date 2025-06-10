@@ -44,3 +44,8 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Browser Extensions Manager UI](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/browser-extensions-manager-ui)                     | [Live Demo](https://terenceclzhang-browser-ext-manager.netlify.app/)    |
 | [Product List with Cart](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/product-list-with-cart)                                   | [Live Demo](https://terenceclzhang-product-list.netlify.app/)           |
 
+## Intermediate Challenges
+
+| Challenge                                                                                                    | Live Demo                                                                   |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| [Space Tourism Website](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/space-tourism-website) | [Live Demo](https://terenceclzhang-testimonials-space-tourism.netlify.app/) |
