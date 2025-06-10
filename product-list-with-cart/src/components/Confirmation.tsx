@@ -3,7 +3,8 @@ import orderConfirmed from "../assets/images/icon-order-confirmed.svg";
 import type { RootState } from "../state/store";
 import ConfirmationItem from "./ConfirmationItem";
 import orderConfirmedSound from "../assets/sounds/OrderConfirmed.mp3";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { CartItemType } from "../types/CartItemType";
 
 const Confirmation = () => {
   const cart = useSelector((state: RootState) => state.cart.cart);
@@ -22,11 +23,7 @@ const Confirmation = () => {
       </div>
 
       <div className="flex flex-col gap-2 w-full bg-rose-100 p-5 rounded-lg">
-        <div className="max-h-50 lg:max-h-50 2xl:max-h-100 overflow-y-auto pr-5">
-          {cart.map((item, index) => (
-            <ConfirmationItem key={index} item={item} />
-          ))}
-        </div>
+        <ConfirmationItemList cart={cart} />
         <div className="flex items-center justify-between">
           <span className="font-semibold">Order Total</span>
           <span className="text-2xl font-bold">${totalPrice.toFixed(2)}</span>
@@ -40,6 +37,35 @@ const Confirmation = () => {
         Start New Order
       </button>
     </section>
+  );
+};
+
+interface ConfirmationItemListProps {
+  cart: CartItemType[];
+}
+
+const ConfirmationItemList = ({ cart }: ConfirmationItemListProps) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [hasScrollBar, setHasScrollBar] = useState<boolean>(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (el) {
+      setHasScrollBar(el.scrollHeight > el.clientHeight);
+    }
+  }, [cart]);
+
+  return (
+    <div
+      className={`max-h-50 2xl:max-h-100 overflow-y-auto scrollbar ${
+        hasScrollBar && "pr-5"
+      }`}
+      ref={containerRef}
+    >
+      {cart.map((item, index) => (
+        <ConfirmationItem key={index} item={item} />
+      ))}
+    </div>
   );
 };
 
