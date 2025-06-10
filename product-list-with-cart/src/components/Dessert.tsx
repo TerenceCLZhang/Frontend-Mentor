@@ -36,6 +36,7 @@ const Dessert = ({ dessert }: Props) => {
         >
           {!cartAmount ? (
             <button
+              type="button"
               className="bg-white w-full justify-center flex items-center gap-2 px-5 py-3 hover:text-red"
               onClick={() =>
                 dispatch(

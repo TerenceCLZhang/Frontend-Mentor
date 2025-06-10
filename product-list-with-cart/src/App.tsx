@@ -7,7 +7,7 @@ function App() {
   const [showConfirmation, setShowConfirmation] = useState<boolean>(false);
 
   return (
-    <div className="flex flex-col items-center gap-8 px-5 py-8 lg:flex-row lg:p-10 xl:p-20 lg:items-start lg:justify-between">
+    <main className="flex flex-col items-center gap-8 px-5 py-8 lg:flex-row lg:p-10 xl:p-20 lg:items-start lg:justify-between">
       <Desserts />
       <Cart setShowConfirmation={setShowConfirmation} />
 
@@ -17,7 +17,7 @@ function App() {
           <Confirmation />
         </>
       )}
-    </div>
+    </main>
   );
 }
 
