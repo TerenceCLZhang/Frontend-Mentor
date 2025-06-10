@@ -20,9 +20,20 @@
 
 @layer base {
   body {
-    @apply font-red-hat;
+    @apply font-red-hat bg-rose-50 text-rose-900;
+  }
+
+  button {
+    @apply cursor-pointer;
   }
 }
 
 @layer components {
+  .inc-dec-btn {
+    @apply flex items-center justify-center border border-rose-50 p-2 rounded-full hover:bg-rose-50;
+  }
+
+  .red-btn {
+    @apply bg-red text-rose-50 p-4 rounded-full font-semibold w-full hover:bg-red-900;
+  }
 }

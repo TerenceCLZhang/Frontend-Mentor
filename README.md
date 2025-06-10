@@ -42,3 +42,4 @@ This repository contains my solutions to various Frontend Mentor challenges. Eac
 | [Time Tracking Dashboard](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/time-tracking-dashboard)                                 | [Live Demo](https://terenceclzhang-time-tracking.netlify.app/)          |
 | [Conference Ticket Generator](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/conference-ticket-generator)                         | [Live Demo](https://terenceclzhang-conference-ticket-gen.netlify.app/)  |
 | [Browser Extensions Manager UI](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/browser-extensions-manager-ui)                     | [Live Demo](https://terenceclzhang-browser-ext-manager.netlify.app/)    |
+| [Product List with Cart](https://github.com/TerenceCLZhang/Frontend-Mentor/tree/master/product-list-with-cart)                                   | [Live Demo](https://terenceclzhang-product-list.netlify.app/)           |
